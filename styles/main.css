@@ -324,6 +324,7 @@ th {
 footer {
   padding: 1em 0 2em;
   background: #fbfdf7; }
+
   footer section {
     margin-bottom: 0; }
 .overlay {
@@ -338,6 +339,11 @@ footer {
     font-weight: lighter;
     line-height: 100%;
 }
+.overlay a {
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+   }
 
 
 /*# sourceMappingURL=main.css.map */
