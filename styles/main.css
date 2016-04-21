@@ -84,6 +84,10 @@ a:hover {
   margin-top: -1em;
   font-weight: 300; }
 
+.date {
+  color: #888;
+}
+
 
 
 @font-face {
@@ -292,7 +296,11 @@ th {
   padding: 5% 5% 5%;
   line-height: 1; }
 .related a {
-  box-shadow: none; }
+  font-weight: normal;
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+  transition: none; }
 .related .table {
   display: table;
   border-collapse: separate;
@@ -319,7 +327,7 @@ th {
     display: table-row;
     width: 100%;
     padding: 0;
-    margin-bottom: 2em; } }
+    margin-bottom: 2em; }}
 
 footer {
   padding: 1em 0 2em;
@@ -340,10 +348,17 @@ footer {
     line-height: 100%;
 }
 .overlay a {
+  font-weight: normal;
   box-shadow: none;
   text-decoration: none;
   color: inherit;
+  transition: none;
    }
-
+.overlay a:hover {
+  font-weight: normal;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: none;
+}
 
 /*# sourceMappingURL=main.css.map */
