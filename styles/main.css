@@ -131,6 +131,9 @@ section {
   .projbild img {
       width: 25%;
       margin: 0 20% 0 10%; }
+  .projbild:hover img {
+      -webkit-filter: brightness(80%);
+      filter: brightness(80%); }
     }
 
 .right {
