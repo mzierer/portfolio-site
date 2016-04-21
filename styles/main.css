@@ -360,5 +360,7 @@ footer {
   color: inherit;
   box-shadow: none;
 }
+#waypoint {
+  cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
