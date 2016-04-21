@@ -1,0 +1,343 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic);
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  overflow-x: hidden; }
+
+img {
+  width: 100%; }
+
+.light-grey {
+  color: #ececec; }
+
+.medium-grey {
+  color: #ccc; }
+
+.dark-grey {
+  color: #888; }
+
+.br-blue {
+  color: #007bc2; }
+
+.br-light-blue {
+  color: #12a4fb; }
+
+.br-dark-blue {
+  color: #004872; }
+
+.br-orange {
+  color: #e08400; }
+
+.br-green {
+  color: #80c200; }
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400; }
+
+h1 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+    font-size: 1.2em;
+}
+
+p {
+  margin-top: 1.5em;
+  margin-bottom: 2em; }
+  p a {
+    text-decoration: none;
+    color: inherit;
+    box-shadow: inset 0 -3px 0 #ccc;
+    transition: box-shadow .2s ease; }
+    p a:hover {
+      box-shadow: inset 0 -3px 0 #007bc2; }
+
+strong, b {
+  font-weight: 600; }
+
+a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;}
+a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.author {
+  color: #888;
+  margin-top: -1em;
+  font-weight: 300; }
+
+
+
+@font-face {
+  font-family: 'icons';
+  src: url("../fonts/icons.eot?49679589");
+  src: url("../fonts/icons.eot?49679589#iefix") format("embedded-opentype"), url("../fonts/icons.woff?49679589") format("woff"), url("../fonts/icons.ttf?49679589") format("truetype"), url("../fonts/icons.svg?49679589#icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+
+
+section {
+  max-width: 940px;
+  margin: 0 auto 4em; }
+
+.block {
+  margin: 0 20% 0 10%; }
+  @media (max-width: 840px) {
+    .block {
+      margin: 0 10%; } }
+  @media (max-width: 560px) {
+    .block {
+      margin: 0 20px; } }
+  @media (max-width: 560px) {
+    .block img {
+      width: calc(100% + 4em);
+      margin-left: -2em; } }
+  .maxbild img {
+      width: 40%;
+      margin: 0 20% 0 10%; } }
+
+.right {
+  float: right; }
+  @media (max-width: 840px) {
+    .right {
+      float: none; } }
+  @media (max-width: 560px) {
+    .right {
+      float: none; } }
+
+.left {
+  float: left;
+  text-align: right; }
+  @media (max-width: 840px) {
+    .left {
+      float: none; } }
+  @media (max-width: 560px) {
+    .left {
+      float: none; } }
+
+.center {
+  text-align: center; }
+
+.imprint {
+  font-size: 0.8em;
+}
+
+.quote {
+  width: 45%;
+  font-weight: 600;
+  position: relative;
+  padding: 0 2em;
+  display: inline-block; }
+  .quote p:first-child {
+    text-indent: 2em; }
+  .quote:before {
+    display: block;
+    content: '\201C';
+    font-size: 5em;
+    position: absolute;
+    left: 25px;
+    top: 0;
+    line-height: 1em; }
+  @media (max-width: 840px) {
+    .quote {
+      margin-left: 10%;
+      margin-right: 10%;
+      width: initial;
+      text-align: center; } }
+
+.caption {
+  margin-top: .2em;
+  color: #888; }
+
+@media (min-width: 841px) {
+  section > .caption {
+    margin: 0 0 20% 0 10%; } }
+@media (max-width: 840px) {
+  section > .caption {
+    margin: 0 10%; } }
+@media (max-width: 560px) {
+  section > .caption {
+    margin: 0 20px; } }
+
+.marginal {
+  max-width: 20%;
+  font-size: .8em;
+  color: #888;
+  padding: 0 2em;
+  position: relative; }
+  .marginal p {
+    margin: 0; }
+  @media (max-width: 840px) {
+    .marginal {
+      float: none;
+      max-width: 100%;
+      padding: 0;
+      margin: -1em 10% 0;
+      text-align: left; }
+      .marginal p {
+        display: inline; }
+        .marginal p:first-child {
+          margin-right: .3em; }
+      .marginal:before {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: 0;
+        width: 100px;
+        border-top: 1px solid #ccc; } }
+  @media (max-width: 560px) {
+    .marginal {
+      margin: -1.5em 20px 0; } }
+
+.infobox {
+  background: #ececec;
+  padding: .75em 1.5em;
+  margin-bottom: 2em; }
+  .infobox h3 {
+    margin: .25em 0 .5em; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 2em; }
+
+td, th {
+  border: 1px solid #f0f0f4;
+  text-align: left;
+  padding: 0 .5em;
+  vertical-align: top; }
+
+th {
+  background: #f0f0f4;
+  border: 1px solid #ddd;
+  font-weight: 600; }
+
+@media (max-width: 840px) {
+  table {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: inherit; }
+
+  table, thead, tbody, th, td, tr {
+    display: block; }
+
+  thead tr {
+    display: none; }
+
+  tr {
+    border: 1px solid #f0f0f4;
+    margin-bottom: 1em; }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #f0f0f4;
+    position: relative;
+    padding-left: 50%; }
+    td:last-child {
+      border-bottom: none; }
+    td:first-child {
+      background: #f0f0f4;
+      font-weight: 600; }
+    td:before {
+      position: absolute;
+      top: 0;
+      left: 7px;
+      width: 50%;
+      white-space: nowrap;
+      content: attr(data-label); }
+
+  .block > table {
+    margin-left: 0;
+    margin-right: 0; } }
+.related img {
+  display: block; }
+.related p {
+  margin: 0;
+  padding: 5% 5% 5%;
+  line-height: 1; }
+.related a {
+  box-shadow: none; }
+.related .table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 4em;
+  margin: -4em 2em 0; }
+.related .cell {
+  cursor: pointer;
+  display: table-cell;
+  width: 33%;
+  vertical-align: top;
+  background: #fbfdf7; }
+  .related .cell:hover {
+    box-shadow: inset ; }
+    .related .cell:hover img {
+      -webkit-filter: brightness(80%);
+      filter: brightness(80%); }
+@media (max-width: 840px) {
+  .related img {
+    width: 100%;
+    margin: 0; }
+  .related p {
+    padding: 5% 5% 6%; }
+  .related .cell {
+    display: table-row;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2em; } }
+
+footer {
+  padding: 1em 0 2em;
+  background: #fbfdf7; }
+  footer section {
+    margin-bottom: 0; }
+.overlay {
+    z-index: 78;
+    width: 80%;
+    margin-left: 5%;
+    position: absolute;
+	top: 7%;
+    text-align: left;
+    color: white;
+    font-size: 3.34vw;
+    font-weight: lighter;
+    line-height: 100%;
+}
+
+
+/*# sourceMappingURL=main.css.map */
